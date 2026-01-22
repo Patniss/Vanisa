@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ajouter un film</title>
+
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Ajouter à la base</h1>
+
+    <!-- FORM FILM -->
+    <div class="box">
+      <h2 class="subtitle">Ajouter un film</h2>
+
+      <form id="movie-form">
+        <div class="field">
+          <label class="label">Titre</label>
+          <div class="control">
+            <input class="input" type="text" id="movie-title" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Année</label>
+          <div class="control">
+            <input class="input" type="number" id="movie-year">
+          </div>
+        </div>
+
+        <div class="control">
+          <button class="button is-primary" type="submit">
+            Ajouter le film
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- FORM PEOPLE -->
+    <div class="box">
+      <h2 class="subtitle">Ajouter une personne</h2>
+
+      <form id="people-form">
+        <div class="field">
+          <label class="label">Prénom</label>
+          <input class="input" id="firstname" required>
+        </div>
+
+        <div class="field">
+          <label class="label">Nom</label>
+          <input class="input" id="lastname" required>
+        </div>
+
+        <div class="field">
+          <label class="label">Date de naissance</label>
+          <input class="input" type="date" id="birthdate">
+        </div>
+
+        <div class="field">
+          <label class="label">Nationalités</label>
+          <select class="input" id="nationalities">
+            <option value="FR">France</option>
+            <option value="US">États-Unis</option>
+          </select>
+        </div>
+
+        <button class="button is-link" type="submit">
+          Ajouter la personne
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- JS -->
+<script type="module" src="js/add.js"></script>
+
+</body>
+</html>
